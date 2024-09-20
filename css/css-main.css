@@ -2660,7 +2660,7 @@ html.show-preloader body {
 }
 
 .slider__content {
-  margin: 135px 0 0 40px;
+  margin: 100px 0 0 40px;
   position: relative;
   z-index: 2;
 }
@@ -2691,7 +2691,7 @@ html.show-preloader body {
 }
 
 .slider__content .sub-title {
-  margin: 0 0 19px;
+  margin: 0 0 25px;
   color: white !important;
   line-height: 1;
   font-family: var(--tg-body-font-family);
@@ -2768,7 +2768,6 @@ html.show-preloader body {
 }
 
 .slider__content .title {
-  margin: 0 0 21px;
   font-size: 150px;
   font-family: var(--tg-berlin-font-family);
   line-height: 0.8;
