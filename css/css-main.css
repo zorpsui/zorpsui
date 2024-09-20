@@ -2660,7 +2660,7 @@ html.show-preloader body {
 }
 
 .slider__content {
-  margin: 100px 0 0 40px;
+  margin: 50px 0 0 40px;
   position: relative;
   z-index: 2;
 }
@@ -11778,4 +11778,9 @@ blockquote p {
 
 .contract-address:hover {
   color: var(--tg-theme-primary);
+}
+
+.elementor-widget-container {
+  display: flex;
+  justify-content: center;
 }

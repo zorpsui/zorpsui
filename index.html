@@ -17,6 +17,42 @@
     <link rel="stylesheet" href="css/css-main.css" />
     <!-- Page-Revealer -->
     <script src="js/js-tg-page-head.js"></script>
+    <script
+      type="text/javascript"
+      src="js/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Allocation", "Pecentage"],
+          ["Marketing", 10],
+          ["Cex Listings", 15],
+          ["Future Plans", 5],
+          ["Liquidity Pool", 70],
+        ]);
+
+        var options = {
+          pieHole: 0.4,
+          backgroundColor: "transparent",
+          legend: {
+            position: "top",
+            alignment: "center",
+            maxLines: 2,
+            textStyle: {
+              color: "white",
+              fontSize: "16",
+            },
+          },
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("donutchart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
   </head>
 
   <body>
@@ -210,7 +246,7 @@
       <section class="slider__area slider__bg">
         <div class="slider-activee">
           <div class="single-slider">
-            <div class="container custom-container">
+            <div class="container">
               <div class="row justify-content-between">
                 <div class="col-lg-6">
                   <div class="slider__content">
@@ -691,6 +727,26 @@
                 </div>
               </div>
             </section>
+
+            <div class="team__area team-bg section-pt-130" data-background="assets/img/bg/team_bg.jpg"></div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-xl-15 col-lg-15 col-md-20">
+                    <div class="section__title text-center">
+                      <h3 class="title"><a name="tokenomics"></a>TOKENOMICS</h3>
+
+                      <div class="elementor-widget-container">
+                        <div
+                          id="donutchart"
+                          style="width: 900px; height: 500px"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <section
               class="roadMap__area roadMap-bg section-pt-150 section-pb-150"
             >
