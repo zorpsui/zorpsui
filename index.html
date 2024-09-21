@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/css-main.css" />
     <!-- Page-Revealer -->
     <script src="js/js-tg-page-head.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
   </head>
 
@@ -699,13 +698,8 @@
                 <div class="row justify-content-center">
                   <div class="col-xl-15 col-lg-15 col-md-20">
                     <div class="section__title text-center">
-                      <h3 class="title"><a name="tokenomics"></a>TOKENOMICS</h3>
-
                       <div class="elementor-widget-container">
-                        <div
-                          id="donutchart"
-                          style="width: 900px; height: 500px; min-height: 400px;"
-                        ></div>
+                        <img decoding="async" src="images/aliens/tokenomics.png" alt="tokenomics" height="auto" width="500">
                       </div>
                     </div>
                   </div>
@@ -1046,38 +1040,5 @@
         </section>
       </div>
     </main>
-
-    <script type="text/javascript">
-      google.charts.load("current", { packages: ["corechart"] });
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ["Allocation", "Pecentage"],
-          ["Marketing", 10],
-          ["Cex Listings", 15],
-          ["Future Plans", 5],
-          ["Liquidity Pool", 70],
-        ]);
-
-        var options = {
-          pieHole: 0.4,
-          backgroundColor: "transparent",
-          legend: {
-            position: "top",
-            alignment: "center",
-            maxLines: 2,
-            textStyle: {
-              color: "white",
-              fontSize: "16",
-            },
-          },
-        };
-
-        var chart = new google.visualization.PieChart(
-          document.getElementById("donutchart")
-        );
-        chart.draw(data, options);
-      }
-    </script>
   </body>
 </html>
